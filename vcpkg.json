@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "lcms",
-    "opencolorio"
+    "openimageio"
   ]
 }
