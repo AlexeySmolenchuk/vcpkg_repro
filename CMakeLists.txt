@@ -14,7 +14,7 @@ find_package(Boost REQUIRED COMPONENTS
     filesystem
     thread)
 
-# Static build fails without it:
+# Static build on Windows fails without it:
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 
 
