@@ -12,12 +12,12 @@ project(repro VERSION 1.0 LANGUAGES CXX)
 find_package(OpenImageIO CONFIG REQUIRED)
 
 
-# Static build fails without it:
-find_package(Boost REQUIRED COMPONENTS
-    filesystem
-    thread)
+# [FIXED NOW] Static build fails without it:
+# find_package(Boost REQUIRED COMPONENTS
+#    filesystem
+#    thread)
 
-# # Static build fails without it on windows:
+# # Static build fails without it on Windows:
 # set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 
 
